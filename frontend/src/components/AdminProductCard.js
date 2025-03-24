@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { MdModeEditOutline } from "react-icons/md";
 import AdminEditProduct from './AdminEditProduct';
-import displayINRCurrency from '../helpers/displayCurrency';
+import displayNPRCurrency from '../helpers/displayCurrency';
 
 const AdminProductCard = ({
     data,
@@ -21,7 +21,7 @@ const AdminProductCard = ({
 
                 <p className='font-semibold'>
                   {
-                    displayINRCurrency(data.sellingPrice)
+                    displayNPRCurrency(data.sellingPrice)
                   }
         
                 </p>

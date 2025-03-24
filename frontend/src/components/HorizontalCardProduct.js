@@ -1,10 +1,10 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
-import fetchCategoryWiseProduct from '../helpers/fetchCategoryWiseProduct';
-import displayNPRCurrency from '../helpers/displayCurrency';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
-import addToCart from '../helpers/addToCart';
 import Context from '../context';
+import addToCart from '../helpers/addToCart';
+import displayNPRCurrency from '../helpers/displayCurrency';
+import fetchCategoryWiseProduct from '../helpers/fetchCategoryWiseProduct';
 
 const HorizontalCardProduct = ({ category, heading }) => {
     const [data, setData] = useState([]);
@@ -102,9 +102,9 @@ const HorizontalCardProduct = ({ category, heading }) => {
                                         <p className='text-red-600 font-medium'>
                                             {displayNPRCurrency(product?.sellingPrice)}
                                         </p>
-                                        <p className='text-slate-500 line-through'>
+                                        {/* <p className='text-slate-500 line-through'>
                                             {displayNPRCurrency(product?.price)}
-                                        </p>
+                                        </p> */}
                                     </div>
                                     <button
                                         className='text-sm bg-red-600 hover:bg-red-700 text-white px-3 py-0.5 rounded-full'

@@ -41,7 +41,7 @@ const Footer = () => {
               <p className='font-semibold'>Shalimar Helmet Shop</p>
               <p className='text-gray-400'>Bhaktapur</p>
               <p className='text-gray-400'>97456452</p>
-              <p className='text-gray-400'>Email</p>
+              <p className='text-gray-400'>shalimarhelmet@gmail.com</p>
             </div>
           </div>
 

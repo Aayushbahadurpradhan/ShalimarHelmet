@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import SummaryApi from '../common'
 import moment from 'moment'
-import displayINRCurrency from '../helpers/displayCurrency'
+import displayNPRCurrency from '../helpers/displayCurrency'
 
 const AllOrder = () => {
     const [data,setData] = useState([])
@@ -50,7 +50,7 @@ const AllOrder = () => {
                                           <div>
                                             <div className='font-medium text-lg text-ellipsis line-clamp-1'>{product.name}</div>
                                             <div className='flex items-center gap-5 mt-1'>
-                                              <div className='text-lg text-red-500'>{displayINRCurrency(product.price)}</div>
+                                              <div className='text-lg text-red-500'>{displayNPRCurrency(product.price)}</div>
                                               <p>Quantity : {product.quantity}</p>
                                             </div>
                                           </div>

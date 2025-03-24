@@ -16,7 +16,7 @@ const Home = () => {
           { category: "Half Helmet", heading: "Top's Half Face Helmets" },
           { category: "Dirt Helmet", heading: "Top's Dirt Helmets" },
           { category: "Gloves", heading: "Top's Gloves" },
-          { category: "Motoroil", heading: "Top's Motor Oil" },
+          { category: "Motor Oil", heading: "Top's Motor Oil" },
           { category: "Tyres", heading: "Top's Tyres" },
           { category: "Raincoat", heading: "Raincoat" },
           { category: "Goggles", heading: "Goggles" }
